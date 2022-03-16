@@ -1,0 +1,28 @@
+{
+  "name": "proyect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "csv-parser": "^3.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "google-documents-api": "^0.3.0",
+    "googleapis": "^95.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.2.2",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

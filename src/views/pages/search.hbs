@@ -1,0 +1,45 @@
+<div class="containerp4 justify-content-center align-items-center">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      </br>
+      <div class="card">
+        <div class="card-body">
+          <form action="/search" method="POST">
+            <div class="form-group">
+              <h2>Persons</h2>
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for id..."
+                title="Type in a name">
+            </div>
+            <div class="form-group">
+              <table id="myTable">
+                <tr class="header">
+                  <th style="width:20%;">Id</th>
+                  <th style="width:20%;">Name</th>
+                  <th style="width:20%;">Date</th>
+                  <th style="width:40%;">Registrer</th>
+                </tr>
+                {{#each results}}
+                <tr>
+                  <td>{{id}}</td>
+                  <td>{{name}}</td>
+                  <td>{{date}}</td>
+                  {{#if_equal aux 'true'}}
+                  <td>
+                    <button type="button" class="btn btn-success" disabled><i class="fas fa-check"></i></button>
+                  </td>
+                  {{else}}
+                  <td>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><i class="fas fa-edit"></i></button>
+                  </td>
+                  {{/if_equal}}
+                </tr>
+                {{/each}}
+              </table>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

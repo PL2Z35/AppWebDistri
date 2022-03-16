@@ -1,0 +1,30 @@
+{{#each results}}
+<div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="/search/add/{{id}}" method="POST">
+        <div class="modal-header">
+          <h5 name="name" class="modal-title" id="exampleModalLabel" value="{{name}}">Person: {{name}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="card-body">
+            <div class="form-group">
+              User: <input type="text" name="user" class="form-control" placeholder="User" value="" autofocus>
+            </div>
+            </br>
+            <div class="form-group">
+              Password: <input type="password"name="pass" id="myInputPass" class="form-control" placeholder="Password"><br>
+              <input type="checkbox" onclick="myFunctionPass()">Show Password
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary btn-block">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{{/each}}
