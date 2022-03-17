@@ -10,7 +10,7 @@ Database replication configuration:
 
 Configuration:
 
-|--src \n
+|--src 
   |--db
   |--|--database.js -> database configuration
   |--|--keys.js -> database connection keys
