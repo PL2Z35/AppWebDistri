@@ -56,7 +56,7 @@ async function readCsv(persons) {
     spreadsheetId,
     range: "person",
   });
-  const personsCsv = getRows.data.values; i  iijb bv vb b bv vbbbbbbbbbbbbbbbbbbbbbbv       bv                                                                                              bv v bb b bvvb vb           v b kmni n  b b b  bv ubv  bv bvbv bvbvbv 
+  const personsCsv = getRows.data.values; 
   let cont = 0;
   for (let i = 1; i < personsCsv.length; i++) {
     if(persons.length==0){
